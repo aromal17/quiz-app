@@ -25,9 +25,9 @@ class ResultScreen extends StatelessWidget {
   @override
   Widget build(context) {
     List<Map<String, Object>> summaryData = getSummaryData();
-    final totalCorrectAnswers = summaryData.where((data) {
-      return data["correct_answer"] == data["user_answer"];
-    }).length;
+    final totalCorrectAnswers = summaryData.where((data) => 
+      data["correct_answer"] == data["user_answer"]
+    ).length;
 
     return SizedBox(
       width: double.infinity,

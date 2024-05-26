@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/answer_button.dart';
 import 'package:quiz_app/models/questions.dart';
-import 'package:quiz_app/result_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class QuestionScreen extends StatefulWidget {
@@ -26,7 +25,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
 
   @override
   Widget build(context) {
-    print("current question : ${currentQuestionIndex}");
     var currentQuestion = questions[currentQuestionIndex];
     return SizedBox(
       width: double.infinity,
